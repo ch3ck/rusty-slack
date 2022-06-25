@@ -39,6 +39,8 @@ jobs:
             CHANGELOG.md
             README.md
             COPYRIGHT
+            LICENSE-APACHE
+            LICENSE-MIT
             SECURITY.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
