@@ -7,6 +7,9 @@
 
 A rust crate for sending messages to Slack via webhooks.
 
+This is a maintained fork of [rust-slack](https://github.com/frostly/rust-slack)
+
+
 [Slack](https://slack.com/) is a messaging platform for team collaboration.
 
 Upgrading? See the [CHANGELOG](./CHANGELOG.md).
