@@ -8,7 +8,7 @@ error_chain! {
         Serialize(::serde_json::error::Error) #[doc = "`serde_json::error::Error`"];
         FromHex(::hex::FromHexError) #[doc = "`rustc_serialize::hex::FromHexError`"];
         Reqwest(::reqwest::Error) #[doc = "`reqwest::Error`"];
-        Url(::reqwest::UrlError) #[doc = "`reqwest::UrlError`"];
+        Url(::url::ParseError) #[doc = "`url::ParseError`"];
         Io(::std::io::Error) #[doc = "`std::io::Error`"];
     }
 
