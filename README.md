@@ -1,9 +1,9 @@
-# rust-slack
-[![Build, Test, and Styling](https://github.com/ch3ck/rust-slack/actions/workflows/basic.yml/badge.svg)](https://github.com/ch3ck/rust-slack/actions/workflows/basic.yml)
+# rusty-slack
+[![Build, Test, and Styling](https://github.com/ch3ck/rusty-slack/actions/workflows/basic.yml/badge.svg)](https://github.com/ch3ck/rusty-slack/actions/workflows/basic.yml)
 
-[![Release new packages](https://github.com/ch3ck/rust-slack/actions/workflows/release.yml/badge.svg)](https://github.com/ch3ck/rust-slack/actions/workflows/release.yml)
+[![Release new packages](https://github.com/ch3ck/rusty-slack/actions/workflows/release.yml/badge.svg)](https://github.com/ch3ck/rusty-slack/actions/workflows/release.yml)
 
-[![supply-chain security - Cargo audit](https://github.com/ch3ck/rust-slack/actions/workflows/audit.yml/badge.svg)](https://github.com/ch3ck/rust-slack/actions/workflows/audit.yml)
+[![supply-chain security - Cargo audit](https://github.com/ch3ck/rusty-slack/actions/workflows/audit.yml/badge.svg)](https://github.com/ch3ck/rusty-slack/actions/workflows/audit.yml)
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE-MIT)
 [![Apache licensed](https://img.shields.io/badge/license-Apache-blue.svg)](./LICENSE-APACHE)
@@ -25,7 +25,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-slack-hook = "0.8"
+slack-hook = "0.9"
 ```
 
 Add the crate to your existing project:
