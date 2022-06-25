@@ -1,7 +1,10 @@
 # rust-slack
-[![Travis Build Status](https://img.shields.io/travis/frostly/rust-slack.svg)](https://travis-ci.org/frostly/rust-slack)
-[![Documentation](https://img.shields.io/badge/docs-latest-C9893D.svg)](https://docs.rs/slack-hook/)
-[![crates.io](https://img.shields.io/crates/v/slack-hook.svg)](https://crates.io/crates/slack-hook)
+[![Build, Test, and Styling](https://github.com/ch3ck/rust-slack/actions/workflows/basic.yml/badge.svg)](https://github.com/ch3ck/rust-slack/actions/workflows/basic.yml)
+
+[![Release new packages](https://github.com/ch3ck/rust-slack/actions/workflows/release.yml/badge.svg)](https://github.com/ch3ck/rust-slack/actions/workflows/release.yml)
+
+[![supply-chain security - Cargo audit](https://github.com/ch3ck/rust-slack/actions/workflows/audit.yml/badge.svg)](https://github.com/ch3ck/rust-slack/actions/workflows/audit.yml)
+
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE-MIT)
 [![Apache licensed](https://img.shields.io/badge/license-Apache-blue.svg)](./LICENSE-APACHE)
 
