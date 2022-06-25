@@ -11,7 +11,7 @@ A rust crate for sending messages to Slack via webhooks.
 
 Upgrading? See the [CHANGELOG](./CHANGELOG.md).
 
-Requires rust 1.17 or newer.
+Requires rust 1.61 or newer.
 
 # Usage
 
@@ -19,7 +19,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-slack-hook = "0.7"
+slack-hook = "0.8"
 ```
 
 Add the crate to your existing project:
