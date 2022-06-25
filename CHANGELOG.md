@@ -1,3 +1,13 @@
+## [0.9.0](https://github.com/ch3ck/rust-slack/tree/v0.9.0)
+
+### Features
+- `reqwest` updated to `0.11`.
+- `hex` updated to `0.4`.
+- `error-chain` updated to `0.12`.
+- `url` support version `2`.
+- `Supply-chain security` and `automated release ` action workflows.
+
+
 ## [0.8.0](https://github.com/frostly/rust-slack/tree/0.8.0)
 
 ### Features
