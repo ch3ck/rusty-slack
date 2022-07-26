@@ -1,3 +1,8 @@
+## [0.9.1](https://github.com/ch3ck/rust-slack/tree/v0.9.1)
+
+### Features
+- `reqwest` updated to `0.10`.
+
 ## [0.9.0](https://github.com/ch3ck/rust-slack/tree/v0.9.0)
 
 ### Features
