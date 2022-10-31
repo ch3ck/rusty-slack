@@ -21,11 +21,18 @@ Requires rust 1.61 or newer.
 
 # Usage
 
-Add this to your `Cargo.toml`:
+Add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-slack-hooked = "0.9"
+slack-hooked = "0.10"
+```
+
+or for use with Tokio or Actix:
+
+```toml
+[dependencies]
+slack-hooked = { version = "0.10", features = ["async"] }
 ```
 
 Add the crate to your existing project:
