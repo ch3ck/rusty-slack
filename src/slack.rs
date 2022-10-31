@@ -1,7 +1,11 @@
 use crate::error::{ErrorKind, Result};
 use crate::Payload;
 use chrono::NaiveDateTime;
-use reqwest::{blocking::Client, Url};
+#[cfg(not(feature = "async"))]
+use reqwest::blocking::Client;
+#[cfg(feature = "async")]
+use reqwest::Client;
+use reqwest::Url;
 use serde::{Serialize, Serializer};
 use std::fmt;
 
@@ -20,7 +24,24 @@ impl Slack {
             client: Client::new(),
         })
     }
+}
 
+#[cfg(feature = "async")]
+impl Slack {
+    /// Send payload to slack service
+    pub async fn send(&self, payload: &Payload) -> Result<()> {
+        let response = &self.client.post(self.hook.clone()).json(payload).send().await?;
+
+        if response.status().is_success() {
+            Ok(())
+        } else {
+            Err(ErrorKind::Slack(format!("HTTP error {}", response.status())).into())
+        }
+    }
+}
+
+#[cfg(not(feature = "async"))]
+impl Slack {
     /// Send payload to slack service
     pub fn send(&self, payload: &Payload) -> Result<()> {
         let response = self.client.post(self.hook.clone()).json(payload).send()?;
