@@ -30,7 +30,12 @@ impl Slack {
 impl Slack {
     /// Send payload to slack service
     pub async fn send(&self, payload: &Payload) -> Result<()> {
-        let response = &self.client.post(self.hook.clone()).json(payload).send().await?;
+        let response = &self
+            .client
+            .post(self.hook.clone())
+            .json(payload)
+            .send()
+            .await?;
 
         if response.status().is_success() {
             Ok(())
